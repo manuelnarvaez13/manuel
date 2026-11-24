@@ -1,0 +1,108 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccc}
+\hline
+\textbf{Modello} & \textbf{-90} & \textbf{-60} & \textbf{-45} & \textbf{-30} & \textbf{0} & \textbf{30} & \textbf{45} & \textbf{60} & \textbf{90} \\
+\hline
+SAM1 ViT-B & 0.004 & 0.472 & 0.559 & 0.579 & 0.609 & 0.584 & 0.567 & 0.485 & 0.001 \\
+SAM1 ViT-L & 0.005 & 0.515 & 0.594 & 0.605 & 0.631 & 0.619 & 0.606 & 0.532 & 0.002 \\
+SAM1 ViT-H & 0.005 & 0.491 & 0.573 & 0.582 & 0.618 & 0.597 & 0.581 & 0.509 & 0.002 \\
+SAM2.1 Tiny & 0.006 & 0.517 & 0.576 & 0.586 & 0.635 & 0.611 & 0.598 & 0.524 & 0.002 \\
+SAM2.1 Small & 0.004 & 0.497 & 0.560 & 0.575 & 0.606 & 0.596 & 0.585 & 0.511 & 0.002 \\
+SAM2.1 Base+ & 0.005 & 0.497 & 0.527 & 0.532 & 0.565 & 0.550 & 0.554 & 0.490 & 0.002 \\
+SAM2.1 Large & 0.006 & 0.507 & 0.573 & 0.596 & 0.628 & 0.624 & 0.613 & 0.532 & 0.002 \\
+\hline
+\end{tabular}}
+\caption{IoU medio per modello e angolo di yaw.}
+\label{tab:iou_angolo_media}
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccc}
+\hline
+\textbf{Modello} & \textbf{-90} & \textbf{-60} & \textbf{-45} & \textbf{-30} & \textbf{0} & \textbf{30} & \textbf{45} & \textbf{60} & \textbf{90} \\
+\hline
+SAM1 ViT-B & 0.043 & 0.270 & 0.214 & 0.203 & 0.208 & 0.191 & 0.196 & 0.251 & 0.020 \\
+SAM1 ViT-L & 0.051 & 0.288 & 0.214 & 0.205 & 0.204 & 0.198 & 0.208 & 0.274 & 0.031 \\
+SAM1 ViT-H & 0.051 & 0.279 & 0.212 & 0.203 & 0.205 & 0.192 & 0.198 & 0.258 & 0.031 \\
+SAM2.1 Tiny & 0.060 & 0.325 & 0.283 & 0.269 & 0.275 & 0.258 & 0.263 & 0.307 & 0.030 \\
+SAM2.1 Small & 0.044 & 0.317 & 0.274 & 0.260 & 0.263 & 0.249 & 0.258 & 0.303 & 0.028 \\
+SAM2.1 Base+ & 0.045 & 0.318 & 0.273 & 0.251 & 0.254 & 0.239 & 0.257 & 0.297 & 0.029 \\
+SAM2.1 Large & 0.057 & 0.318 & 0.279 & 0.272 & 0.272 & 0.261 & 0.269 & 0.314 & 0.030 \\
+\hline
+\end{tabular}}
+\caption{Deviazione standard dell'IoU per modello e angolo di yaw.}
+\label{tab:iou_angolo_std}
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccc}
+\hline
+\textbf{Modello} & \textbf{-90} & \textbf{-60} & \textbf{-45} & \textbf{-30} & \textbf{0} & \textbf{30} & \textbf{45} & \textbf{60} & \textbf{90} \\
+\hline
+SAM1 ViT-B & 98.9 & 14.7 & 2.1 & 1.1 & 0.5 & 0.5 & 2.1 & 12.6 & 99.5 \\
+SAM1 ViT-L & 98.9 & 14.7 & 2.1 & 1.1 & 0.5 & 0.5 & 2.1 & 12.6 & 99.5 \\
+SAM1 ViT-H & 98.9 & 14.7 & 2.1 & 1.1 & 0.5 & 0.5 & 2.1 & 12.6 & 99.5 \\
+SAM2.1 Tiny & 98.9 & 18.9 & 10.0 & 8.4 & 7.4 & 6.8 & 7.9 & 17.4 & 99.5 \\
+SAM2.1 Small & 98.9 & 19.5 & 10.0 & 8.4 & 7.4 & 6.8 & 7.9 & 17.4 & 99.5 \\
+SAM2.1 Base+ & 98.9 & 18.9 & 10.0 & 8.4 & 7.4 & 6.8 & 7.9 & 17.4 & 99.5 \\
+SAM2.1 Large & 98.9 & 18.9 & 10.0 & 8.4 & 7.4 & 6.8 & 7.9 & 17.4 & 99.5 \\
+\hline
+\end{tabular}}
+\caption{Percentuale di record con IoU = 0 per modello e angolo.}
+\label{tab:zeri_angolo}
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccc}
+\hline
+\textbf{Modello} & \textbf{FRONT} & \textbf{SIDE} & \textbf{EXTREME} & \textbf{$\Delta$ F--S} \\
+\hline
+SAM1 ViT-B & 0.591 $\pm$ 0.201 & 0.521 $\pm$ 0.238 & 0.003 $\pm$ 0.034 & 0.070 \\
+SAM1 ViT-L & 0.618 $\pm$ 0.202 & 0.562 $\pm$ 0.251 & 0.004 $\pm$ 0.042 & 0.057 \\
+SAM1 ViT-H & 0.599 $\pm$ 0.201 & 0.538 $\pm$ 0.242 & 0.004 $\pm$ 0.042 & 0.060 \\
+SAM2.1 Tiny & 0.611 $\pm$ 0.268 & 0.554 $\pm$ 0.297 & 0.004 $\pm$ 0.048 & 0.057 \\
+SAM2.1 Small & 0.592 $\pm$ 0.257 & 0.538 $\pm$ 0.291 & 0.003 $\pm$ 0.037 & 0.054 \\
+SAM2.1 Base+ & 0.549 $\pm$ 0.248 & 0.517 $\pm$ 0.288 & 0.003 $\pm$ 0.038 & 0.032 \\
+SAM2.1 Large & 0.616 $\pm$ 0.268 & 0.556 $\pm$ 0.298 & 0.004 $\pm$ 0.045 & 0.060 \\
+\hline
+\end{tabular}}
+\caption{IoU medio $\pm$ deviazione standard per regione angolare.}
+\label{tab:regioni}
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccc}
+\hline
+\textbf{Modello} & \textbf{FRONT} & \textbf{SIDE} & \textbf{EXTREME} \\
+\hline
+SAM1 ViT-B & 0.7 & 7.9 & 99.2 \\
+SAM1 ViT-L & 0.7 & 7.9 & 99.2 \\
+SAM1 ViT-H & 0.7 & 7.9 & 99.2 \\
+SAM2.1 Tiny & 7.5 & 13.6 & 99.2 \\
+SAM2.1 Small & 7.5 & 13.7 & 99.2 \\
+SAM2.1 Base+ & 7.5 & 13.6 & 99.2 \\
+SAM2.1 Large & 7.5 & 13.6 & 99.2 \\
+\hline
+\end{tabular}}
+\caption{Percentuale di record con IoU = 0 per regione angolare.}
+\label{tab:zeri_regioni}
+\end{table}
